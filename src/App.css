@@ -7,10 +7,27 @@
 
 header,
 footer {
-  text-align: center;
+  background-color: rgb(151, 195, 235);
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 main {
   display: grid;
   place-items: center;
+}
+
+.shop {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.product {
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
 }
